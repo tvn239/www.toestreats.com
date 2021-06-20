@@ -1,0 +1,299 @@
+*{
+margin:0;
+padding:0;
+}
+title #tt-title{
+  display: none;
+}
+
+body {
+font-family:'Open Sans', sans-serif;
+font-weight: 800;
+margin-left: 5px;
+margin-top: 10px;
+background-color: #fff9f3;
+}
+svg{
+  list-style: none;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  display: block;
+  height: 150px;
+  width: 1em;
+}
+
+
+.content-wrapper{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: .5em;
+}
+.nightmode-bg{
+  background-color: #414b3b;
+}
+.nightmode{
+  color: #fff9f3 !important ;
+
+}
+.nightmode-nav {
+  color: #fff9f3 !important ;
+}
+ header, footer{
+  grid-column: 1/ span 4;
+  margin-bottom: 10px;
+}
+main{
+  grid-column: 1/ span 4;
+}
+nav li{
+  list-style: none;
+}
+ul{
+  text-align: center;
+}
+.menu-items{
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+.menu-items li{
+  flex: 0 1 auto;
+}
+#home-menu-item{
+  margin-left: 2em;
+}
+.cls-50:hover{
+fill: #F1C5C5;
+}
+.sectioncontainer{
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 90%;
+}
+.pictureandrecipe{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.svg{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#me{
+  flex: 0 0 auto;
+}
+#daily-recipe {
+  flex: 0 0 auto;
+}
+
+#foodsections{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.foodsections{
+  flex: 1 0 200px;
+  /* flex-grow: 1;
+  flex-basis: 200px; */
+}
+.sectioncontainer{
+  max-width: 95%;
+}
+h1{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 75px;
+  font-style: normal;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.finished{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 75px;
+  font-style: normal;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+h1#headline{
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Abril Fatface', cursive;
+}
+
+p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: #ab8742;}
+
+h3{
+  font-family: 'Anton', sans-serif;
+  font-size: 40px;
+  color: #728363;
+  text-align: center;
+}
+body p{
+  padding-left:35px;
+  padding-right: 35px;
+  text-align: center;
+}
+
+
+img#photoshoppedimg{
+  display: block;
+  margin-left: 30px;
+  margin-right: auto;
+  border-color: #F1C5C5;
+  border: 20px;
+  width: 85%;
+}
+table {
+  border: 1px solid black;
+}
+#baked li{
+  text-align: center;
+}
+#cooked li{
+  text-align: center
+}
+
+#baked img{
+  width: 85%;
+}
+.bakednames{
+  text-align: center;
+}
+.cookednames{
+  text-align: center;
+}
+.futurenames .futuredescription {
+  text-align: center;
+}
+#future img{
+  width: 85%;
+}
+#future li{
+  text-align: center;
+}
+#cooked img{
+  width: 85%;
+}
+a:link{
+  color: #5d5340
+}
+
+a:visited{
+  color:#414b3b
+}
+a:hover{
+  color: #F1C5C5
+}
+a:active{
+  color: #5d5340
+}
+footer{
+  margin-top: 20px;
+  text-align: center;
+  color: #414b3b}
+.recipecontainer{
+    display: flex;
+    flex-flow: row wrap;
+
+  }
+#recipe{
+  flex: 0 0 auto;
+  margin-left: 50px;
+  max-width: 90%;
+}
+
+/* media queries */
+
+@media (max-width: 374px) {
+  svg{
+    list-style: none;
+    margin-right: auto;
+    margin-left: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    display: block;
+    height: 150px;
+    width: 250px;
+  }
+}
+
+/* iphones n smaller screens */
+@media (min-width: 375px) {
+svg{
+  list-style: none;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  display: block;
+  height: 150px;
+  width: 250px;
+}
+/* #me img{
+  margin: 0 auto;
+} */
+#baked img{
+  margin-left: 1em;
+  max-width: 30em;
+}
+#cooked img{
+  margin-left: 1em;
+  max-width: 30em;
+}
+#photoshoppedimg img{
+max-width: 30em;
+}
+#future li{
+  display: block;
+}
+#future img{
+  margin-left: 1em;
+  max-width: 35em;
+}
+}
+/* tablet size and up */
+@media (min-width: 768px) {
+ body p{
+   padding-left:45px;
+   padding-right: 45px;
+   text-align: center;
+ }
+ #baked img{
+   margin-left: 4em;
+   max-width: 30em;
+ }
+ #cooked img{
+   margin-left: 4em;
+   max-width: 30em;
+ }
+ #future img{
+   margin-left: 4em;
+   max-width: 35em;
+ }
+}
+/* very wide screens and up */
+@media (min-width:1000px) {
+  body p{
+    padding-left:100px;
+    padding-right: 100px;
+    text-align: center;
+  }
+  #baked img{
+    margin-left: 2%;
+    max-width: 30em;
+  }
+  #cooked img{
+    margin-left: 2%;
+    max-width: 30em;
+  }
+  #future img{
+    margin-left: 7em;
+    max-width: 35em;
+  }
+}
